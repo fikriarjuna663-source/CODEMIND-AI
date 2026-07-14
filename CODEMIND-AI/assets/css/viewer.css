@@ -1,0 +1,58 @@
+/* ==========================================================
+   VIEWER - KONTROL LAYOUT CODE VIEWER
+========================================================== */
+
+.viewer {
+    display: flex;
+    flex-direction: column;
+    background: #111827;
+    border: 1px solid #1E293B;
+    border-radius: 12px;
+    overflow: hidden;
+    min-height: 0;
+    width: 100%;
+}
+
+.viewer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: #1E293B;
+    color: white;
+    border-bottom: 1px solid #334155;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+/* Container utama untuk area kode */
+.viewer pre {
+    margin: 0;
+    padding: 20px;
+    overflow: auto;
+    flex: 1; /* Penting: Mengisi sisa ruang */
+    background: #020617;
+    color: #E2E8F0;
+}
+
+.viewer code {
+    font-family: 'Consolas', 'Monaco', 'monospace';
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Tombol Copy di dalam header viewer jika diperlukan */
+.copy-btn {
+    background: #2563EB;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 12px;
+}
+
+.copy-btn:hover {
+    background: #38BDF8;
+}

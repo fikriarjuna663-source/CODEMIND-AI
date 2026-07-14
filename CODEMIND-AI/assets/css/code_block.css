@@ -1,0 +1,52 @@
+/* ==========================================================
+   CODE BLOCK - STYLING UNTUK BLOK KODE
+========================================================== */
+
+.code-container {
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background: #0F172A;
+    border-radius: 12px;
+    border: 1px solid #1E293B;
+    overflow: hidden;
+}
+
+.code-container pre {
+    margin: 0;
+    padding: 20px;
+    overflow-x: auto;
+    color: #E2E8F0;
+    font-family: 'Consolas', 'Monaco', 'monospace';
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Tombol copy khusus untuk blok kode dalam chat */
+.copy-btn {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    background: #2563EB;
+    border: none;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: 0.2s;
+}
+
+.copy-btn:hover {
+    background: #1D4ED8;
+}
+
+/* Penyesuaian scrollbar untuk blok kode */
+.code-container pre::-webkit-scrollbar {
+    height: 8px;
+}
+
+.code-container pre::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 4px;
+}

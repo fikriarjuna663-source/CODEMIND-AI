@@ -1,0 +1,49 @@
+.chat-message h1{
+
+font-size:28px;
+
+color:#38BDF8;
+
+margin-bottom:15px;
+
+}
+
+.chat-message h2{
+
+font-size:24px;
+
+color:#38BDF8;
+
+margin-bottom:15px;
+
+}
+
+.chat-message h3{
+
+font-size:20px;
+
+color:#38BDF8;
+
+margin-bottom:15px;
+
+}
+
+.chat-message strong{
+
+color:#fff;
+
+}
+
+.chat-message em{
+
+color:#94A3B8;
+
+}
+
+.chat-message{
+
+line-height:1.8;
+
+font-size:15px;
+
+}

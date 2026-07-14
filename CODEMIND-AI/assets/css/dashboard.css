@@ -1,0 +1,29 @@
+body{
+    background:#f4f6f9;
+}
+
+.bg-dark{
+    background:#0f172a !important;
+}
+
+.card{
+    border:none;
+    border-radius:15px;
+}
+
+a{
+    transition:.3s;
+}
+
+a:hover{
+    padding-left:8px;
+}
+
+.btn-primary{
+    background:#2563EB;
+    border:none;
+}
+
+.btn-primary:hover{
+    background:#1d4ed8;
+}

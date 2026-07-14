@@ -1,0 +1,218 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#020617;
+    overflow:hidden;
+}
+
+.background{
+
+    position:fixed;
+    width:100%;
+    height:100%;
+
+    background:
+    radial-gradient(circle at top left,#2563EB,transparent 40%),
+    radial-gradient(circle at bottom right,#38BDF8,transparent 40%),
+    #020617;
+
+    filter:blur(40px);
+
+    animation:bgMove 10s infinite alternate;
+
+}
+
+@keyframes bgMove{
+
+0%{
+
+transform:scale(1);
+
+}
+
+100%{
+
+transform:scale(1.2);
+
+}
+
+}
+
+.container{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+height:100vh;
+
+position:relative;
+
+z-index:2;
+
+}
+
+.landing-card{
+
+width:500px;
+
+padding:45px;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(20px);
+
+border:1px solid rgba(255,255,255,.15);
+
+border-radius:20px;
+
+text-align:center;
+
+box-shadow:0 0 40px rgba(56,189,248,.35);
+
+animation:fadeUp .8s;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+.logo{
+
+font-size:60px;
+
+margin-bottom:20px;
+
+}
+
+.landing-card h1{
+
+color:white;
+
+font-size:38px;
+
+font-weight:700;
+
+margin-bottom:15px;
+
+text-shadow:0 0 20px #38BDF8;
+
+}
+
+.landing-card p{
+
+color:#d1d5db;
+
+margin-bottom:40px;
+
+}
+
+.menu-button{
+
+display:flex;
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+.btn-neon{
+
+background:#2563EB;
+
+color:white;
+
+padding:15px;
+
+font-size:17px;
+
+font-weight:600;
+
+border-radius:12px;
+
+transition:.3s;
+
+box-shadow:0 0 20px rgba(37,99,235,.5);
+
+border:none;
+
+text-decoration:none;
+
+}
+
+.btn-neon:hover{
+
+background:#38BDF8;
+
+transform:translateY(-4px);
+
+box-shadow:0 0 35px #38BDF8;
+
+color:white;
+
+}
+
+.btn-outline-light{
+
+padding:15px;
+
+font-size:17px;
+
+font-weight:600;
+
+border-radius:12px;
+
+}
+
+.footer{
+
+margin-top:35px;
+
+color:#94A3B8;
+
+font-size:14px;
+
+}
+
+@media(max-width:768px){
+
+.landing-card{
+
+width:95%;
+
+padding:30px;
+
+}
+
+.landing-card h1{
+
+font-size:28px;
+
+}
+
+}
